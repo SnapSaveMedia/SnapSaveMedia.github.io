@@ -1,0 +1,23 @@
+# app-ads.txt for SaveIt
+# This file verifies authorized digital sellers for our app's ad inventory
+# Learn more: https://iabtechlab.com/ads-txt/
+
+# Google AdMob
+# Replace pub-0000000000000000 with your actual AdMob Publisher ID
+# You can find it in AdMob Console > Settings > Account Information
+google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0
+
+# Instructions:
+# 1. Replace pub-0000000000000000 with your actual AdMob Publisher ID
+# 2. Upload this file to the ROOT of your website (https://yourdomain.com/app-ads.txt)
+# 3. Verify it's accessible at: https://yourdomain.com/app-ads.txt
+# 4. Wait 24-48 hours for AdMob to verify
+
+# If you use additional ad networks, add them here:
+# Example for Meta Audience Network:
+# facebook.com, YOUR_FACEBOOK_BUSINESS_ID, DIRECT, c3e20eee3f780d68
+
+# Example for Unity Ads:
+# unity.com, YOUR_UNITY_GAME_ID, DIRECT, 96cabb5fbdde37a7
+
+# Note: Keep this file updated when you add or remove ad networks
