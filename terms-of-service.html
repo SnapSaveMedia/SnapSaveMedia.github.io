@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terms of Service - SaveIt - Video & Photo Saver</title>
+    <title>Terms of Service - SaveIt - Video &amp; Photo Saver</title>
     <link rel="stylesheet" href="css/style.css">
     <style>
         .terms-content {
@@ -21,6 +21,8 @@
             color: #333;
             margin-top: 2rem;
             margin-bottom: 1rem;
+            border-left: 4px solid #2196F3;
+            padding-left: 12px;
         }
         .terms-content h3 {
             color: #555;
@@ -30,25 +32,56 @@
         .terms-content p {
             margin-bottom: 1rem;
         }
-        .terms-content ul {
+        .terms-content ul, .terms-content ol {
             margin-left: 2rem;
             margin-bottom: 1rem;
+        }
+        .terms-content li {
+            margin-bottom: 6px;
         }
         .last-updated {
             color: #666;
             font-style: italic;
+        }
+        .meta-info {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 25px;
+            border-left: 4px solid #28a745;
         }
         .important-notice {
             background: #fff3cd;
             border-left: 4px solid #ffc107;
             padding: 1rem;
             margin: 1rem 0;
+            border-radius: 4px;
         }
-        .critical-notice {
+        .warning {
             background: #f8d7da;
             border-left: 4px solid #dc3545;
             padding: 1.5rem;
             margin: 1.5rem 0;
+            border-radius: 4px;
+        }
+        .vip-box {
+            background-color: #f0fff4;
+            border: 1px solid #b2dfdb;
+            border-radius: 5px;
+            padding: 15px 20px;
+            margin: 15px 0;
+        }
+        .contact-info {
+            background-color: #e7f3ff;
+            border: 1px solid #b3d9ff;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 25px 0;
+        }
+        a { color: #2196F3; }
+        @media (max-width: 600px) {
+            .terms-content { padding: 1rem; }
+            .terms-content h1 { font-size: 1.5rem; }
         }
     </style>
 </head>
@@ -66,191 +99,286 @@
     </header>
 
     <div class="terms-content">
-        <h1>SaveIt - Video & Photo Saver User License Agreement</h1>
-        <p class="last-updated">Effective Date: February 28, 2026</p>
-        <p class="last-updated">Last Updated: February 28, 2026</p>
+        <h1>Terms of Service &mdash; SaveIt - Video &amp; Photo Saver</h1>
+
+        <div class="meta-info">
+            <p><strong>Effective Date:</strong> February 28, 2026<br>
+            <strong>Last Updated:</strong> May 29, 2026<br>
+            <strong>App Name:</strong> SaveIt - Video &amp; Photo Saver<br>
+            <strong>Contact:</strong> zhuxiaoit4@gmail.com</p>
+        </div>
 
         <div class="important-notice">
-            <strong>Important:</strong> By downloading, installing, or using SaveIt - Video & Photo Saver, you agree to these terms. Please read them carefully.
+            <p><strong>Important:</strong> By downloading, installing, or using SaveIt - Video &amp; Photo Saver, you agree to these Terms of Service. Please read them carefully before use.</p>
         </div>
 
         <h2>1. Acceptance of Terms</h2>
-        <p>By downloading, installing, or using SaveIt - Video & Photo Saver ("the App"), you agree to be bound by these Terms of Service. If you do not agree to these terms, do not use the App.</p>
+        <p>By downloading, installing, or using SaveIt - Video &amp; Photo Saver ("the App"), you agree to be bound by these Terms of Service and our <a href="privacy-policy.html">Privacy Policy</a>. If you do not agree to these terms, do not download or use the App.</p>
 
         <h2>2. Description of Service</h2>
-        <p>SaveIt - Video & Photo Saver is a mobile application that helps users save videos and photos from various applications for personal use. The App uses VPN technology (Android VpnService) to detect and save media content.</p>
+        <p>SaveIt is a full-featured private browser for Android that includes:</p>
+        <ul>
+            <li><strong>Browser:</strong> Multi-tab web browsing with bookmarks, history, search, and the ability to be set as your default browser</li>
+            <li><strong>Media Detection:</strong> Detects and downloads video and audio resources from web pages</li>
+            <li><strong>VPN Capture:</strong> Uses Android VpnService to intercept local network traffic for media detection (local only, no external routing)</li>
+            <li><strong>Safebox:</strong> Encrypted local file vault protected by PIN and/or biometric authentication</li>
+            <li><strong>Form Autofill:</strong> Detects login forms and saves/fills account credentials locally</li>
+            <li><strong>Ad Blocking:</strong> Blocks advertisements and redirects while browsing</li>
+            <li><strong>Download Manager:</strong> Manages file downloads including HLS and DASH streams</li>
+            <li><strong>DLNA Cast:</strong> Casts media to DLNA-compatible devices on your local network</li>
+            <li><strong>Screen Recording:</strong> Records on-screen content with optional audio capture using Android MediaProjection</li>
+            <li><strong>QR Code Scanner:</strong> Scans QR codes and barcodes using the device camera</li>
+            <li><strong>Audio/Video Player:</strong> Built-in media player with background audio playback support</li>
+            <li><strong>File Import:</strong> Receives files shared from other apps for import into Safebox or playback</li>
+            <li><strong>Floating Window:</strong> Overlay controls for quick access to media detection while using other apps</li>
+            <li><strong>APK Installation:</strong> Triggers the system installer for downloaded APK files</li>
+            <li><strong>WiFi Transfer:</strong> Sends and receives files between devices on the same local network via a temporary local HTTP server</li>
+            <li><strong>Clipboard Detection:</strong> Monitors clipboard for URLs to enable quick navigation (optional, can be disabled)</li>
+            <li><strong>Webpage Screenshot:</strong> Captures screenshots of the current webpage or video player content</li>
+            <li><strong>Text Selection Search:</strong> Allows searching text selected in other apps within the browser</li>
+        </ul>
 
-        <div class="critical-notice">
-            <h3>⚠️ VPN Service Disclosure</h3>
-            <p><strong>THIS APP USES VPN TECHNOLOGY</strong></p>
-            <p>SaveIt - Video & Photo Saver uses Android VPN Service to detect media content. This is a <strong>local VPN</strong> that runs entirely on your device:</p>
+        <h2>3. VPN Service Disclosure</h2>
+        <div class="warning">
+            <p><strong>⚠️ This App uses Android VpnService</strong></p>
+            <p>SaveIt uses Android's VpnService API to detect media content from network traffic. This is a <strong>local VPN only</strong>:</p>
             <ul>
-                <li>✅ All processing happens on your device</li>
-                <li>✅ We do NOT route your traffic through external servers</li>
-                <li>✅ We do NOT collect your browsing history or passwords</li>
+                <li>✅ All processing happens entirely on your device</li>
+                <li>✅ We do <strong>not</strong> route your traffic through external servers</li>
+                <li>✅ We do <strong>not</strong> collect your browsing history, passwords, or personal data via VPN</li>
                 <li>✅ Your privacy is protected</li>
             </ul>
-            <p><strong>You cannot opt-out of VPN usage as it is essential for core functionality. If you do not agree, please uninstall this app immediately.</strong></p>
+            <p>To detect media on HTTPS pages, the App may prompt you to install a local CA certificate. This certificate is used solely for local traffic analysis and is not used to intercept or transmit your data externally.</p>
+            <p>You cannot opt out of VPN usage for the media detection feature. If you do not agree, please disable the VPN Capture feature or uninstall the App.</p>
         </div>
-
-        <h2>3. Privacy Permission</h2>
-        <p>We follow the principles of legitimacy, legality, and necessity to collect and use your personal information. This information is only used to improve software quality and will not be disclosed or shared with anyone or any organization.</p>
-
-        <h3>Information We Collect</h3>
-        <ul>
-            <li>System information (device model, OS version, memory, CPU type)</li>
-            <li>Crash logs for debugging</li>
-            <li>App usage statistics</li>
-        </ul>
-
-        <h3>Data We Do NOT Collect</h3>
-        <p>We will never collect, upload, or store:</p>
-        <ul>
-            <li>❌ Your identity information</li>
-            <li>❌ Passwords or login credentials</li>
-            <li>❌ Browsing history</li>
-            <li>❌ Personal messages or communications</li>
-            <li>❌ Banking or payment information</li>
-            <li>❌ Saved videos and photos (stored locally only)</li>
-        </ul>
 
         <h2>4. User Responsibilities</h2>
-        
+
         <h3>4.1 Legal Use Only</h3>
-        <p>You agree to use the App only for lawful purposes and in accordance with these Terms. You are solely responsible for:</p>
+        <p>You agree to use the App only for lawful purposes. You are solely responsible for:</p>
         <ul>
-            <li>Ensuring you have the right to save and use any content</li>
-            <li>Complying with all applicable copyright laws</li>
-            <li>Respecting the terms of service of third-party platforms</li>
-            <li>Not using the App to infringe on others' intellectual property rights</li>
+            <li>Ensuring you have the right to save, download, or use any content</li>
+            <li>Complying with all applicable copyright laws and intellectual property rights</li>
+            <li>Respecting the terms of service of third-party websites and platforms</li>
+            <li>Complying with all local laws and regulations applicable to your use of the App</li>
         </ul>
 
-        <h3>4.2 Prohibited Uses</h3>
-        <p>You agree NOT to:</p>
+        <h3>4.2 Safebox Responsibility</h3>
+        <p>You are solely responsible for:</p>
         <ul>
-            <li>Download copyrighted content without permission</li>
-            <li>Use the App for commercial purposes without authorization</li>
-            <li>Distribute saved content without proper rights</li>
-            <li>Reverse engineer, decompile, or modify the App</li>
-            <li>Use the App to violate any laws or regulations</li>
-            <li>Interfere with the App's operation or security</li>
-            <li>Release unauthorized versions of the App</li>
+            <li>The content you store in the Safebox</li>
+            <li>Keeping your PIN secure and not sharing it with others</li>
+            <li>Backing up important files &mdash; we are not responsible for data loss due to device failure, App uninstallation, or forgotten PIN</li>
+            <li>Ensuring that files stored in the Safebox do not violate any laws or third-party rights</li>
         </ul>
 
-        <h2>5. Copyright and Intellectual Property</h2>
-        
-        <div class="critical-notice">
-            <h3>⚠️ Copyright Notice</h3>
-            <p><strong>SaveIt - Video & Photo Saver is a tool for personal use only.</strong></p>
-            <p>Users must respect copyright laws and obtain necessary permissions before saving or using copyrighted content. You are solely responsible for ensuring you have the right to save and use any content.</p>
+        <h3>4.3 Form Autofill Responsibility</h3>
+        <p>You are solely responsible for:</p>
+        <ul>
+            <li>The credentials you save using the Form Autofill feature</li>
+            <li>Ensuring you only save credentials for accounts you own and are authorized to access</li>
+            <li>The security of your device &mdash; if your device is accessed by others, saved credentials may be accessible</li>
+        </ul>
+
+        <h3>4.4 Screen Recording Responsibility</h3>
+        <p>You are solely responsible for:</p>
+        <ul>
+            <li>Ensuring you have the right to record any on-screen content</li>
+            <li>Complying with applicable laws regarding recording conversations or audio (some jurisdictions require all-party consent)</li>
+            <li>Not recording copyrighted content (e.g., DRM-protected streaming video) for redistribution</li>
+            <li>Not recording sensitive information belonging to others without their consent</li>
+            <li>Managing and securing your recorded files</li>
+        </ul>
+
+        <h3>4.5 APK Installation Responsibility</h3>
+        <p>You are solely responsible for:</p>
+        <ul>
+            <li>Verifying the safety and authenticity of any APK file you download and install</li>
+            <li>Any damage caused by installing malicious or unauthorized APK files</li>
+            <li>Ensuring APK files do not violate any intellectual property rights</li>
+        </ul>
+        <div class="important-notice">
+            <p><strong>Warning:</strong> Installing APK files from unknown sources may pose security risks. Only install APK files from sources you trust.</p>
         </div>
 
-        <p>We respect intellectual property rights and expect our users to do the same. If you believe your copyright has been infringed, please contact us at <a href="mailto:zhuxiaoit4@gmail.com">zhuxiaoit4@gmail.com</a>.</p>
-
-        <h2>6. Function Risk</h2>
-        <p>You acknowledge and understand that:</p>
+        <h3>4.6 DLNA Casting Responsibility</h3>
+        <p>You are solely responsible for:</p>
         <ul>
-            <li>Saved media may contain sensitive information - please manage your saved content carefully</li>
-            <li>You should delete saved content regularly or avoid saving sensitive material</li>
-            <li>If the laws of your region prohibit software programs of this type, you should comply with local laws and uninstall this app immediately</li>
+            <li>Ensuring you have the right to cast content to devices on your network</li>
+            <li>Verifying that you are casting to your own devices or devices you have permission to use</li>
         </ul>
 
-        <h2>7. Disclaimer of Warranties</h2>
+        <h3>4.7 WiFi Transfer Responsibility</h3>
+        <p>You are solely responsible for:</p>
+        <ul>
+            <li>Ensuring you are connected to a trusted network when using the WiFi Transfer feature</li>
+            <li>The content of files you send or receive via WiFi Transfer</li>
+            <li>Verifying the identity of devices you connect to for file transfer</li>
+            <li>Any security risks arising from using this feature on public or untrusted networks</li>
+        </ul>
+        <div class="important-notice">
+            <p><strong>Warning:</strong> WiFi Transfer starts a temporary local HTTP server on your device. Only use this feature on trusted private networks. Using it on public Wi-Fi may expose your files to other devices on the same network.</p>
+        </div>
+
+        <h3>4.8 Clipboard Detection Responsibility</h3>
+        <p>You acknowledge that:</p>
+        <ul>
+            <li>When the "Auto Detect Clipboard" feature is enabled, the App reads clipboard content while in the foreground to detect URLs</li>
+            <li>Clipboard history (up to 50 entries) is stored locally on your device</li>
+            <li>You can disable this feature at any time from the More Menu</li>
+            <li>You should avoid copying sensitive information (passwords, personal data) to the clipboard while this feature is active</li>
+        </ul>
+
+        <h2>5. Prohibited Uses</h2>
+        <div class="warning">
+            <p>You agree <strong>NOT</strong> to:</p>
+            <ol>
+                <li>Download, save, or distribute copyrighted content without the rights holder's permission</li>
+                <li>Use the App for any illegal activities, including unauthorized interception of third-party network traffic</li>
+                <li>Use the VPN feature to intercept or monitor network traffic of other users or devices</li>
+                <li>Use the Form Autofill feature to store credentials obtained without authorization</li>
+                <li>Store illegal content (including but not limited to content that violates copyright, privacy, or obscenity laws) in the Safebox</li>
+                <li>Use the screen recording feature to record copyrighted content for redistribution, or to record private conversations without consent</li>
+                <li>Use the QR scanner to access or distribute malicious content</li>
+                <li>Install or distribute APK files that contain malware, spyware, or violate intellectual property rights</li>
+                <li>Reverse engineer, decompile, disassemble, or modify the App</li>
+                <li>Distribute unauthorized versions of the App through any channel</li>
+                <li>Use the App to interfere with or disrupt any network, server, or service</li>
+                <li>Attempt to circumvent any security or authentication features of the App</li>
+                <li>Use the floating window or overlay feature to obscure or interfere with other applications</li>
+            </ol>
+        </div>
+
+        <h2>6. Copyright and Intellectual Property</h2>
+        <div class="important-notice">
+            <p><strong>⚠️ Copyright Notice</strong></p>
+            <p>SaveIt is a tool for personal use only. Users must respect copyright laws and obtain necessary permissions before saving or using copyrighted content. <strong>You are solely responsible</strong> for ensuring you have the right to save and use any content downloaded through the App.</p>
+        </div>
+        <p>We respect intellectual property rights and expect our users to do the same. If you believe your copyright has been infringed as a result of a user's actions, please contact us at zhuxiaoit4@gmail.com.</p>
+
+        <h2>7. Privacy and Data</h2>
+        <p>Your use of the App is governed by our <a href="privacy-policy.html">Privacy Policy</a>, which is incorporated into these Terms by reference. Key points:</p>
+        <ul>
+            <li>Browse history, bookmarks, Safebox files, and form credentials are stored <strong>locally on your device only</strong></li>
+            <li>We do <strong>not</strong> upload your personal data to our servers</li>
+            <li>The VPN feature operates locally and does not route your traffic externally</li>
+            <li>You can delete all local data at any time via the App's cache management settings</li>
+        </ul>
+
+        <h2>8. Function Risks and Acknowledgments</h2>
+        <p>You acknowledge and understand that:</p>
+        <ol>
+            <li>The App's cache and local storage may contain sensitive information (including saved credentials, downloaded files, and browsing history). You should manage and clear this data regularly.</li>
+            <li>If you forget your Safebox PIN and have no biometric authentication configured, you may lose access to your Safebox contents. We cannot recover your PIN.</li>
+            <li>If the laws of your region prohibit software of this type (e.g., VPN-based tools or network analysis tools), you must comply with local laws and uninstall the App immediately.</li>
+            <li>The App's media detection capability depends on the structure of third-party websites, which may change at any time. We do not guarantee that all media can be detected or downloaded.</li>
+            <li>Screen recordings may consume significant storage space. You are responsible for managing your device's storage.</li>
+            <li>The screen recording feature captures all on-screen content, including notifications and sensitive information that may appear during recording. Review recordings before sharing.</li>
+            <li>APK files downloaded from the internet may contain malware. The App does not verify the safety of APK files.</li>
+            <li>DLNA casting requires devices to be on the same local network. Casting quality depends on your network conditions.</li>
+            <li>Setting SaveIt as your default browser means all web links will open in SaveIt. You can change this in your device's system settings at any time.</li>
+            <li>WiFi Transfer starts a temporary HTTP server on your device. Using this feature on public or untrusted networks may expose your files to other devices on the same network.</li>
+            <li>The clipboard detection feature reads clipboard content while the App is in the foreground. Sensitive information copied to the clipboard may be stored in the local clipboard history.</li>
+            <li>The App may install a local CA certificate for HTTPS media detection. This certificate is used only for local traffic analysis.</li>
+        </ol>
+
+        <h2>9. VIP Subscription</h2>
+        <div class="vip-box">
+            <h3>9.1 VIP Features</h3>
+            <ul>
+                <li>✅ Ad-free browsing experience</li>
+                <li>✅ Unlimited download history</li>
+                <li>✅ Priority support</li>
+                <li>✅ Batch download</li>
+            </ul>
+
+            <h3>9.2 Payment and Billing</h3>
+            <ul>
+                <li>Subscriptions are billed through Google Play</li>
+                <li>Prices are shown in your local currency at the time of purchase</li>
+                <li>Payment is charged at confirmation of purchase</li>
+                <li>Subscriptions automatically renew unless cancelled before the renewal date</li>
+                <li>Subscriptions are non-refundable except as required by applicable law</li>
+            </ul>
+
+            <h3>9.3 Cancellation</h3>
+            <p>You can cancel your subscription at any time through Google Play. Cancellation takes effect at the end of the current billing period. You will retain VIP access until the end of the paid period.</p>
+        </div>
+
+        <h2>10. Third-Party Services</h2>
+        <p>The App integrates with third-party services including Google AdMob, Unity Ads, InMobi, Firebase Analytics, Google Play Integrity, and Google Play Billing. We are not responsible for:</p>
+        <ul>
+            <li>The content, availability, or practices of third-party websites you visit using the browser</li>
+            <li>Changes to third-party platforms that affect the App's media detection capability</li>
+            <li>Violations of third-party terms of service by users</li>
+            <li>The privacy practices of third-party advertising SDKs (AdMob, Unity Ads, InMobi)</li>
+            <li>The safety or legitimacy of APK files downloaded from third-party sources</li>
+        </ul>
+        <p>Third-party SDK privacy policies:</p>
+        <ul>
+            <li><a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a> (Firebase, AdMob, Play Billing, Play Integrity)</li>
+            <li><a href="https://unity.com/legal/privacy-policy" target="_blank">Unity Privacy Policy</a> (Unity Ads)</li>
+            <li><a href="https://www.inmobi.com/privacy-policy" target="_blank">InMobi Privacy Policy</a></li>
+        </ul>
+
+        <h2>11. Disclaimer of Warranties</h2>
         <p>THE APP IS PROVIDED "AS IS" WITHOUT WARRANTIES OF ANY KIND. WE DO NOT GUARANTEE:</p>
         <ul>
             <li>The App will be error-free or uninterrupted</li>
-            <li>All content can be successfully saved</li>
-            <li>The App will be compatible with all devices or platforms</li>
-            <li>Saved content will be of any particular quality</li>
-            <li>The App will work with all third-party applications</li>
+            <li>All media content can be successfully detected or downloaded</li>
+            <li>The App will be compatible with all devices, Android versions, or third-party platforms</li>
+            <li>The Safebox encryption will be unbreakable under all circumstances</li>
+            <li>The Form Autofill feature will detect all login forms on all websites</li>
+            <li>Screen recordings will capture all content without frame drops or quality loss</li>
+            <li>The QR scanner will successfully decode all QR codes or barcodes</li>
+            <li>DLNA casting will work with all devices or network configurations</li>
+            <li>Downloaded APK files are safe, virus-free, or legitimate</li>
+            <li>The floating window will function correctly on all device manufacturers' Android implementations</li>
+            <li>WiFi Transfer will work reliably on all network configurations or with all devices</li>
+            <li>Clipboard detection will correctly identify all URL formats</li>
         </ul>
 
-        <h2>8. Limitation of Liability</h2>
-        <p>TO THE MAXIMUM EXTENT PERMITTED BY LAW:</p>
+        <h2>12. Limitation of Liability</h2>
+        <p>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, WE ARE NOT LIABLE FOR:</p>
         <ul>
-            <li>We are not liable for any damages arising from your use of the App</li>
-            <li>We are not responsible for content saved by users</li>
-            <li>We are not liable for any copyright infringement by users</li>
-            <li>We are not responsible for violations of third-party terms of service</li>
-            <li>Our total liability shall not exceed the amount you paid for the App (if any)</li>
+            <li>Any damages arising from your use or inability to use the App</li>
+            <li>Loss of data stored in the Safebox or local database due to device failure or App uninstallation</li>
+            <li>Copyright infringement or other legal violations by users</li>
+            <li>Unauthorized access to your device or App data by third parties</li>
+            <li>Service interruptions due to force majeure events (natural disasters, power outages, government orders, etc.)</li>
+            <li>System interruptions due to hacker attacks, technical failures, or regulatory changes</li>
         </ul>
+        <p>Our total liability to you shall not exceed the amount you paid for the App or VIP subscription in the 12 months preceding the claim.</p>
 
-        <h3>Specific Disclaimers</h3>
-        <p>We are not liable for any damages that may result from:</p>
-        <ul>
-            <li>If you violate this agreement or related service terms</li>
-            <li>If you violate this agreement and cause any third-party damage</li>
-            <li>If the service cannot be used normally due to force majeure (typhoon, earthquake, power outage, war, etc.)</li>
-            <li>If the system service is interrupted due to hacker attacks, technical adjustments, system maintenance, government orders, changes in laws, etc.</li>
-        </ul>
+        <h2>13. Termination</h2>
+        <p>We reserve the right to suspend or terminate your access to the App at any time if you violate these Terms. Upon termination, your right to use the App ceases immediately. Locally stored data remains on your device until you delete it or uninstall the App.</p>
 
-        <h2>9. VIP Subscription</h2>
-        
-        <h3>9.1 Subscription Features</h3>
-        <p>VIP subscriptions provide additional features:</p>
-        <ul>
-            <li>✅ Ad-free experience</li>
-            <li>✅ Unlimited save history</li>
-            <li>✅ HD quality priority</li>
-            <li>✅ Batch download</li>
-            <li>✅ Priority support</li>
-        </ul>
+        <h2>14. Changes to Terms</h2>
+        <p>We may update these Terms from time to time. We will notify users of significant changes via in-app notification and by updating the "Last Updated" date. Continued use of the App after changes constitutes acceptance of the updated Terms.</p>
 
-        <h3>9.2 Payment and Billing</h3>
-        <ul>
-            <li>Subscriptions are billed through Google Play</li>
-            <li>Prices are shown in your local currency</li>
-            <li>Payment is charged at confirmation of purchase</li>
-            <li>Subscriptions are non-refundable except as required by law</li>
-        </ul>
-
-        <h3>9.3 Cancellation</h3>
-        <p>You can cancel your subscription at any time through Google Play. Cancellation takes effect at the end of the current billing period.</p>
-
-        <h2>10. Privacy</h2>
-        <p>Your use of the App is also governed by our <a href="privacy-policy-saveit.html">Privacy Policy</a>. Please review it to understand how we collect and use your information.</p>
-
-        <h2>11. Third-Party Services</h2>
-        <p>The App may contain links to or integrate with third-party services. We are not responsible for:</p>
-        <ul>
-            <li>The content or practices of third-party services</li>
-            <li>Changes to third-party platforms that affect the App</li>
-            <li>Violations of third-party terms of service by users</li>
-        </ul>
-
-        <h2>12. Termination</h2>
-        <p>We reserve the right to:</p>
-        <ul>
-            <li>Suspend or terminate your access to the App at any time</li>
-            <li>Remove or disable any content or features</li>
-            <li>Modify or discontinue the App without notice</li>
-        </ul>
-        <p>If you violate this agreement, we have the right to take measures including but not limited to interrupting the license, stopping the service, restricting use, and legal action.</p>
-
-        <h2>13. Changes to Terms</h2>
-        <p>We may update these Terms from time to time. Continued use of the App after changes constitutes acceptance of the new Terms. We will notify users of significant changes.</p>
-
-        <h2>14. Governing Law</h2>
-        <p>These Terms are governed by the laws of [Your Jurisdiction]. Any disputes shall be resolved in the courts of [Your Jurisdiction].</p>
-
-        <h2>15. Contact Information</h2>
-        <p>For questions about these Terms, please contact us:</p>
-        <ul>
-            <li><strong>Email:</strong> <a href="mailto:zhuxiaoit4@gmail.com">zhuxiaoit4@gmail.com</a></li>
-            <li><strong>Website:</strong> <a href="https://saveit.app">https://saveit.app</a></li>
-            <li><strong>App Name:</strong> SaveIt - Video & Photo Saver</li>
-        </ul>
+        <h2>15. Governing Law</h2>
+        <p>These Terms are governed by the laws of the People's Republic of China. Any disputes arising from these Terms shall be resolved through good-faith negotiation. If negotiation fails, disputes shall be submitted to the competent court in the jurisdiction of our registered address.</p>
+        <p>For users outside of China, you agree that any disputes will be resolved in accordance with the laws stated above, except where local consumer protection laws provide otherwise and cannot be waived by contract.</p>
 
         <h2>16. Severability</h2>
-        <p>If any provision of these Terms is found to be unenforceable, the remaining provisions will continue in full force and effect.</p>
+        <p>If any provision of these Terms is found to be unenforceable or invalid under applicable law, that provision shall be modified to the minimum extent necessary to make it enforceable, and the remaining provisions shall continue in full force and effect.</p>
 
         <h2>17. Entire Agreement</h2>
-        <p>These Terms, together with our Privacy Policy, constitute the entire agreement between you and SaveIt - Video & Photo Saver regarding the use of the App.</p>
+        <p>These Terms of Service, together with our Privacy Policy, constitute the entire agreement between you and SaveIt regarding your use of the App and supersede all prior agreements and understandings.</p>
+
+        <h2>18. Contact Information</h2>
+        <div class="contact-info">
+            <p>For questions about these Terms, please contact us:</p>
+            <p>
+                <strong>Email:</strong> zhuxiaoit4@gmail.com<br>
+                <strong>App Name:</strong> SaveIt - Video &amp; Photo Saver<br>
+                <strong>Website:</strong> <a href="https://saveit.app">https://saveit.app</a>
+            </p>
+        </div>
 
         <hr style="margin: 2rem 0;">
         <p style="text-align: center;">
-            <a href="index.html">Back to Home</a> | 
-            <a href="privacy-policy-saveit.html">Privacy Policy</a> | 
+            <a href="privacy-policy.html">Privacy Policy</a> |
             <a href="support.html">Support</a>
         </p>
     </div>
