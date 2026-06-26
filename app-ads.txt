@@ -21,3 +21,4 @@ google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0
 # unity.com, YOUR_UNITY_GAME_ID, DIRECT, 96cabb5fbdde37a7
 
 # Note: Keep this file updated when you add or remove ad networks
+google.com, pub-1261203143935421, DIRECT, f08c47fec0942fa0
