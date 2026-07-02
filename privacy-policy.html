@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - SaveIt - Video &amp; Photo Saver</title>
+    <title>Privacy Policy - SaveIt Video Downloader</title>
     <link rel="stylesheet" href="css/style.css">
     <style>
         .policy-content {
@@ -110,18 +110,18 @@
     </header>
 
     <div class="policy-content">
-        <h1>Privacy Policy &mdash; SaveIt - Video &amp; Photo Saver</h1>
+        <h1>Privacy Policy &mdash; SaveIt Video Downloader</h1>
 
         <div class="meta-info">
             <p><strong>Effective Date:</strong> February 28, 2026<br>
-            <strong>Last Updated:</strong> May 31, 2026<br>
-            <strong>App Name:</strong> SaveIt - Video &amp; Photo Saver<br>
+            <strong>Last Updated:</strong> July 2, 2026<br>
+            <strong>App Name:</strong> SaveIt Video Downloader<br>
             <strong>Contact:</strong> zhuxiaoit4@gmail.com</p>
         </div>
 
         <h2>1. Introduction</h2>
-        <p>SaveIt ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application SaveIt - Video &amp; Photo Saver (the "App").</p>
-        <p>SaveIt is a full-featured private browser with integrated media detection, encrypted file storage (Safebox), form autofill, password manager, ad blocking, download management, screen recording, QR code scanning, DLNA media casting, WiFi file transfer, clipboard URL detection, webpage screenshot, background audio playback, and audio/video playback. By using our App, you agree to the terms of this Privacy Policy.</p>
+        <p>SaveIt ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application SaveIt Video Downloader (the "App").</p>
+        <p>SaveIt is a full-featured private browser with integrated media detection, protected local file storage (Safebox), form autofill, password manager, ad blocking, download management, screen recording, QR code scanning, DLNA media casting, WiFi file transfer, clipboard URL detection, webpage screenshot, background audio playback, and audio/video playback. By using our App, you agree to the terms of this Privacy Policy.</p>
 
         <h2>2. Information We Collect</h2>
 
@@ -149,29 +149,30 @@
             <p><strong>Incognito Mode:</strong> When browsing in incognito tabs, no browse history, search history, or tab state is recorded to the local database. Session cookies created in incognito tabs are cleared when the tab is closed.</p>
         </div>
 
-        <h3>2.3 VPN-Based Media Detection</h3>
+        <h3>2.3 Local VPN Media Detection</h3>
         <div class="warning">
             <p><strong>⚠️ VPN Service Disclosure</strong></p>
-            <p>SaveIt uses Android's <code>VpnService</code> API to intercept local network traffic for the purpose of detecting video and audio media resources. This is a <strong>local VPN only</strong> &mdash; your traffic is <strong>not</strong> routed through any external server.</p>
+            <p>SaveIt uses Android's <code>VpnService</code> API for optional local media detection. When you enable this feature, the App creates a <strong>local VPN on your device only</strong> to help identify video and audio media links from apps you select. Your traffic is <strong>not</strong> routed through any external VPN server.</p>
             <ul>
-                <li>All traffic analysis happens entirely on your device</li>
+                <li>Local media detection happens entirely on your device</li>
+                <li>You choose which apps are included in VPN-based media detection</li>
                 <li>We do <strong>not</strong> collect, store, or transmit your network traffic content</li>
                 <li>We do <strong>not</strong> collect passwords, cookies, or personal communications via VPN</li>
                 <li>Detected media URLs are stored locally and never uploaded</li>
             </ul>
-            <p>To detect media resources on HTTPS pages, the App may prompt you to install a local CA certificate. This certificate is used solely for local traffic analysis on your device and is not used to intercept or transmit your data to external servers. Installing this certificate allows the App to decrypt HTTPS traffic locally for media detection purposes only. You can remove this certificate at any time from your device's security settings (Settings &gt; Security &gt; Trusted credentials &gt; User).</p>
-            <p>The App may query the list of installed applications on your device to allow you to select which apps' traffic should be monitored by the VPN. This information is processed locally and is never uploaded to our servers.</p>
-            <p>You cannot opt out of VPN usage as it is essential for the media detection feature. If you do not agree, please do not use this feature or uninstall the App.</p>
+            <p>To detect media resources on HTTPS pages or selected apps, the App may prompt you to install a local CA certificate. This certificate is used solely for local media link detection on your device and is not used to transmit your data to external servers. Installing this certificate allows the App to inspect HTTPS traffic locally for media detection purposes only. You can remove this certificate at any time from your device's security settings (Settings &gt; Security &gt; Trusted credentials &gt; User).</p>
+            <p>The App may query the list of installed applications on your device to allow you to select which apps should be included in VPN-based media detection. This information is processed locally and is never uploaded to our servers.</p>
+            <p>VPN-based media detection is optional. If you do not agree with this disclosure, do not enable this feature, or turn it off from the App's More Menu.</p>
         </div>
 
-        <h3>2.4 Safebox &mdash; Encrypted File Storage</h3>
-        <p>The Safebox feature allows you to store files (videos, photos, documents) in an encrypted local vault protected by a PIN and/or biometric authentication.</p>
+        <h3>2.4 Safebox &mdash; Protected File Storage</h3>
+        <p>The Safebox feature allows you to store files (videos, photos, documents) in a protected local vault, isolated from the device's media scanner and accessible only through the App after PIN and/or biometric authentication.</p>
         <ul>
-            <li><strong>Files you import</strong> into the Safebox are encrypted using AES and stored in the App's private directory on your device</li>
+            <li><strong>Files you import</strong> into the Safebox are stored in a hidden, access-controlled directory on your device, preventing other apps and the system media scanner from indexing them</li>
             <li>Your PIN is stored as a secure hash &mdash; we never store your PIN in plain text</li>
             <li>Biometric authentication uses Android's system-level BiometricPrompt API; biometric data never leaves your device</li>
             <li>Safebox contents are <strong>never uploaded</strong> to our servers or shared with third parties</li>
-            <li>If you uninstall the App, all Safebox data is permanently deleted along with the App's data</li>
+            <li>If you uninstall the App, Safebox files may remain in the hidden directory on your device storage until you manually delete them. We recommend exporting or deleting important files before uninstalling</li>
         </ul>
 
         <h3>2.5 Form Autofill (Account Credentials)</h3>
@@ -226,21 +227,21 @@
             <li>We do not upload or transmit shared files to any server</li>
         </ul>
 
-        <h3>2.11 APK Installation</h3>
-        <p>When you download APK files through the browser, the App may request the <code>REQUEST_INSTALL_PACKAGES</code> permission to trigger the system installer.</p>
+        <h3>2.11 APK Files</h3>
+        <p>When you download APK files through the browser, the App saves or shares the downloaded file using Android system share/open flows. The App does <strong>not</strong> request the <code>REQUEST_INSTALL_PACKAGES</code> permission and does not directly install APK files.</p>
         <ul>
             <li>The App does not modify APK files in any way</li>
-            <li>Installation is handled entirely by the Android system installer</li>
-            <li>You are responsible for verifying the safety of any APK you choose to install</li>
+            <li>If you choose to open or share an APK, any installation flow is handled by Android or by another app you explicitly select</li>
+            <li>You are responsible for verifying the safety of any APK you choose to open, share, or install outside the App</li>
         </ul>
 
         <h3>2.12 Storage Access</h3>
         <p>The App requests storage permissions to manage downloaded files:</p>
         <ul>
             <li>On Android 10 and below: <code>READ_EXTERNAL_STORAGE</code> and <code>WRITE_EXTERNAL_STORAGE</code> for saving downloads</li>
-            <li>On Android 11+: <code>MANAGE_EXTERNAL_STORAGE</code> to scan and manage files in the public Downloads directory</li>
+            <li>On Android 11 and above: the App does <strong>not</strong> request <code>MANAGE_EXTERNAL_STORAGE</code>; when folder access is needed, it uses Android's system file picker / Storage Access Framework and only accesses locations you select</li>
             <li>Storage access is used solely for saving, organizing, and playing back downloaded media files</li>
-            <li>We do not scan or access files unrelated to the App's functionality</li>
+            <li>We do not scan or access files unrelated to the App's functionality or files outside locations you grant</li>
         </ul>
 
         <h3>2.13 DLNA Media Casting</h3>
@@ -324,9 +325,10 @@
         <h3>2.22 Advertising Consent</h3>
         <p>The App implements advertising consent mechanisms to comply with regional privacy regulations:</p>
         <ul>
-            <li>Advertising data collection is <strong>disabled by default</strong> and only enabled after you explicitly accept our Privacy Policy on first launch</li>
-            <li>For users in the European Economic Area, GDPR consent signals are passed to advertising partners (Unity Ads, AdMob, InMobi) to ensure compliant ad delivery</li>
-            <li>You can opt out of personalized advertising at any time via your device's Google Ads settings, or upgrade to VIP to remove all ads entirely</li>
+            <li>Advertising SDKs are used only in the ad-supported version of the App</li>
+            <li>Where required by regional privacy laws, Google User Messaging Platform is used to collect advertising consent choices before personalized ads are requested</li>
+            <li>Consent signals are passed to advertising partners (Google AdMob and Unity Ads mediation) to support compliant ad delivery</li>
+            <li>You can opt out of personalized advertising at any time via your device's Google Ads settings, or upgrade to Premium to remove ads from ad-supported placements</li>
         </ul>
 
         <h3>2.23 App Usage Analytics (Third-Party SDKs)</h3>
@@ -350,17 +352,7 @@
             <li>Ad interaction data (views, clicks)</li>
             <li>App usage patterns for ad personalization</li>
         </ul>
-        <p>You can upgrade to VIP to remove all ads. This data is subject to <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>.</p>
-
-        <h4>InMobi (Free version only)</h4>
-        <p>The free version of the App may also display ads via InMobi SDK. InMobi may collect:</p>
-        <ul>
-            <li>Device identifiers and hardware information</li>
-            <li>IP address and approximate location</li>
-            <li>Ad interaction data</li>
-            <li>App usage patterns for ad targeting</li>
-        </ul>
-        <p>You can upgrade to VIP to remove all ads. This data is subject to <a href="https://www.inmobi.com/privacy-policy" target="_blank">InMobi's Privacy Policy</a>.</p>
+        <p>You can upgrade to Premium to remove ads from ad-supported placements. This data is subject to <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>.</p>
 
         <h4>Unity Ads (Free version only)</h4>
         <p>The free version of the App may display ads via Unity Ads SDK as an advertising mediation partner. Unity Ads may collect:</p>
@@ -370,19 +362,19 @@
             <li>Ad interaction data (views, clicks, completions)</li>
             <li>App usage patterns for ad targeting</li>
         </ul>
-        <p>You can upgrade to VIP to remove all ads. This data is subject to <a href="https://unity.com/legal/privacy-policy" target="_blank">Unity's Privacy Policy</a>.</p>
+        <p>You can upgrade to Premium to remove ads from ad-supported placements. This data is subject to <a href="https://unity.com/legal/privacy-policy" target="_blank">Unity's Privacy Policy</a>.</p>
 
         <h4>Google Play Integrity API</h4>
         <p>The App uses Google Play Integrity API to verify device security and protect against unauthorized modifications. This process sends device attestation data to Google's servers. No personal information is collected through this process. This is subject to <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>.</p>
 
         <h4>Google Play Billing</h4>
-        <p>For VIP purchases, transaction data is processed by Google Play. We receive only the purchase status and subscription state.</p>
+        <p>For Premium purchases, transaction data is processed by Google Play. We receive only the purchase status, product identifier, order identifier, and subscription state needed to verify and provide your purchase.</p>
 
         <h2>3. How We Use Your Information</h2>
         <ul>
             <li><strong>Browser functionality:</strong> Store browse history, bookmarks, and tabs locally for your use</li>
-            <li><strong>Media detection:</strong> Identify video and audio resources from network traffic for download</li>
-            <li><strong>Safebox:</strong> Encrypt and store your private files locally</li>
+            <li><strong>Media detection:</strong> Identify video and audio resources on pages you browse or through optional local VPN media detection for selected apps</li>
+            <li><strong>Safebox:</strong> Store your private files locally in a protected hidden directory</li>
             <li><strong>Form Autofill &amp; Password Manager:</strong> Save, fill, organize, import, and export login credentials on HTTPS pages</li>
             <li><strong>Screen recording:</strong> Capture on-screen content and optionally audio for local storage</li>
             <li><strong>QR scanning:</strong> Decode QR codes and barcodes using the camera</li>
@@ -402,13 +394,13 @@
         <h2>3.1 Legal Basis for Processing (EEA Users)</h2>
         <p>If you are located in the European Economic Area, we process your data based on the following legal grounds:</p>
         <ul>
-            <li><strong>Consent:</strong> Analytics and advertising data collection (you provide consent on first launch; you can withdraw consent by disabling analytics in settings or upgrading to VIP)</li>
+            <li><strong>Consent:</strong> Analytics and advertising data collection where required by applicable law or platform consent requirements</li>
             <li><strong>Contract performance:</strong> Providing the App's core functionality (browsing, downloading, Safebox, etc.) as described in our Terms of Service</li>
             <li><strong>Legitimate interest:</strong> Crash reporting and security verification to maintain App stability and prevent abuse</li>
         </ul>
 
         <h2>3.2 Do Not Sell My Personal Information</h2>
-        <p>We do <strong>not</strong> sell, rent, or trade your personal information to third parties for monetary or other valuable consideration. The sharing of data with advertising partners (AdMob, InMobi, Unity Ads) in the free version is for the purpose of displaying ads and is not considered a "sale" under applicable privacy laws. You can opt out of this sharing entirely by upgrading to VIP.</p>
+        <p>We do <strong>not</strong> sell, rent, or trade your personal information to third parties for monetary or other valuable consideration. The sharing of data with advertising partners (Google AdMob and Unity Ads mediation) in the ad-supported version is for the purpose of displaying ads and is not considered a "sale" under applicable privacy laws. You can opt out of personalized ads through your device settings, and Premium removes ads from ad-supported placements.</p>
 
         <h2>3.3 Permissions Summary</h2>
         <p>The following table summarizes the Android permissions used by the App and their purposes:</p>
@@ -434,12 +426,12 @@
                 <td style="border:1px solid #eee; padding:8px;">Local VPN for media detection (no external routing)</td>
             </tr>
             <tr>
-                <td style="border:1px solid #eee; padding:8px;"><code>QUERY_ALL_PACKAGES</code> / <code>&lt;queries&gt;</code></td>
-                <td style="border:1px solid #eee; padding:8px;">Query installed applications to allow user selection of VPN target apps; processed locally only</td>
+                <td style="border:1px solid #eee; padding:8px;"><code>&lt;queries&gt;</code></td>
+                <td style="border:1px solid #eee; padding:8px;">Allow Android to resolve supported external links such as web, mail, telephone, and market links; the App does not request <code>QUERY_ALL_PACKAGES</code></td>
             </tr>
             <tr>
-                <td style="border:1px solid #eee; padding:8px;"><code>MANAGE_EXTERNAL_STORAGE</code></td>
-                <td style="border:1px solid #eee; padding:8px;">Manage downloaded files in public directories (Android 11+)</td>
+                <td style="border:1px solid #eee; padding:8px;">Storage Access Framework</td>
+                <td style="border:1px solid #eee; padding:8px;">Access user-selected folders or files on Android 11+ without requesting <code>MANAGE_EXTERNAL_STORAGE</code></td>
             </tr>
             <tr>
                 <td style="border:1px solid #eee; padding:8px;"><code>RECORD_AUDIO</code></td>
@@ -462,8 +454,8 @@
                 <td style="border:1px solid #eee; padding:8px;">Download progress, media playback controls, and recording status notifications</td>
             </tr>
             <tr>
-                <td style="border:1px solid #eee; padding:8px;"><code>REQUEST_INSTALL_PACKAGES</code></td>
-                <td style="border:1px solid #eee; padding:8px;">Allow installation of downloaded APK files</td>
+                <td style="border:1px solid #eee; padding:8px;">APK share/open flows</td>
+                <td style="border:1px solid #eee; padding:8px;">Share or open downloaded APK files through Android system flows without requesting <code>REQUEST_INSTALL_PACKAGES</code></td>
             </tr>
             <tr>
                 <td style="border:1px solid #eee; padding:8px;"><code>FOREGROUND_SERVICE</code></td>
@@ -471,7 +463,7 @@
             </tr>
             <tr>
                 <td style="border:1px solid #eee; padding:8px;"><code>FOREGROUND_SERVICE_DATA_SYNC</code></td>
-                <td style="border:1px solid #eee; padding:8px;">VPN media detection service and download service running in background</td>
+                <td style="border:1px solid #eee; padding:8px;">Local VPN media detection service and download service running in background</td>
             </tr>
             <tr>
                 <td style="border:1px solid #eee; padding:8px;"><code>FOREGROUND_SERVICE_MEDIA_PLAYBACK</code></td>
@@ -499,14 +491,15 @@
 
         <h3>Local Storage</h3>
         <ul>
-            <li>All browsing data, Safebox files, and form credentials are stored in the App's private directory on your device</li>
-            <li>Sensitive data (Safebox files, form credentials) is encrypted at rest using AES-256-GCM with keys managed by Android Keystore</li>
+            <li>All browsing data and form credentials are stored in the App's private directory on your device</li>
+            <li>Safebox files are stored in a hidden directory on device storage, excluded from media scanning</li>
+            <li>Form credentials are encrypted at rest using AES-256-GCM with keys managed by Android Keystore</li>
             <li>You can clear all local data at any time via the App's cache management settings</li>
         </ul>
 
         <h3>Security Measures</h3>
         <ul>
-            <li>Safebox files are encrypted with AES before being written to disk</li>
+            <li>Safebox files are stored in a hidden directory with access control enforced by PIN and/or biometric authentication</li>
             <li>Form credentials are encrypted using AES-256-GCM with hardware-backed keys (Android Keystore)</li>
             <li>PIN codes are stored as secure hashes, never in plain text</li>
             <li>Biometric authentication leverages Android's system-level BiometricPrompt with hardware security modules</li>
@@ -518,14 +511,14 @@
         <ul>
             <li>Browsing history, bookmarks, Safebox files, and form credentials are <strong>never transmitted</strong> to external servers</li>
             <li>Analytics and crash data is transmitted securely via HTTPS to Google's infrastructure</li>
-            <li>Ad-related data is handled by Google's, InMobi's, and Unity's secure infrastructure respectively</li>
+            <li>Ad-related data is handled by Google's and Unity's secure infrastructure respectively</li>
         </ul>
 
         <h3>Data Retention</h3>
         <ul>
             <li>Local data: Retained until you manually delete it or uninstall the App</li>
             <li>Analytics data: Retained per Firebase's data retention policies</li>
-            <li>Ad data: Retained per Google AdMob's, InMobi's, and Unity's respective data retention policies</li>
+            <li>Ad data: Retained per Google AdMob's and Unity's respective data retention policies</li>
         </ul>
 
         <h2>5. Data Sharing and Disclosure</h2>
@@ -543,7 +536,6 @@
         <ul>
             <li><strong>Firebase Analytics:</strong> Anonymized usage statistics</li>
             <li><strong>Google AdMob:</strong> Device and usage data for ads (free version only)</li>
-            <li><strong>InMobi:</strong> Device and usage data for ads (free version only)</li>
             <li><strong>Unity Ads:</strong> Device and usage data for ads (free version only)</li>
             <li><strong>Google Play Billing:</strong> Purchase data for transaction processing</li>
         </ul>
@@ -561,13 +553,13 @@
                 <li><strong>Delete Safebox files:</strong> Delete individual files or all Safebox contents from within the Safebox</li>
                 <li><strong>Delete screen recordings:</strong> Delete recordings from your device's file manager or the App</li>
                 <li><strong>Disable Form Autofill:</strong> Toggle off in the More Menu at any time</li>
-                <li><strong>Disable VPN media detection:</strong> Toggle off the VPN Capture feature in the More Menu</li>
+                <li><strong>Disable Local VPN Media Detection:</strong> Toggle off the Media Detector Pro feature in the More Menu</li>
                 <li><strong>Disable clipboard detection:</strong> Toggle off "Auto Detect Clipboard" in the More Menu</li>
                 <li><strong>Clear clipboard history:</strong> Clear via cache management settings</li>
                 <li><strong>Disable floating window:</strong> Revoke overlay permission in system settings</li>
                 <li><strong>Stop background audio playback:</strong> Dismiss the playback notification or close the player</li>
                 <li><strong>Change default browser:</strong> Change your default browser in your device's system settings at any time</li>
-                <li><strong>Opt out of personalized ads:</strong> Disable ad personalization in your device's Google settings, or upgrade to VIP</li>
+                <li><strong>Opt out of personalized ads:</strong> Disable ad personalization in your device's Google settings, manage regional consent choices where available, or upgrade to Premium</li>
                 <li><strong>Reset Advertising ID:</strong> Reset in your device's system settings</li>
                 <li><strong>Revoke camera access:</strong> Disable camera permission in system settings to prevent QR scanning</li>
                 <li><strong>Revoke microphone access:</strong> Disable microphone permission in system settings to prevent audio recording</li>
@@ -612,11 +604,11 @@
         <p>If you are a parent or guardian and believe your child has provided us with personal information, please contact us immediately at zhuxiaoit4@gmail.com so we can take appropriate action.</p>
 
         <h2>8. International Data Transfers</h2>
-        <p>Analytics and advertising data may be transferred to and processed in countries other than your own, including the United States, where Google's, InMobi's, and Unity's servers are located. These countries may have different data protection laws than your country of residence.</p>
+        <p>Analytics and advertising data may be transferred to and processed in countries other than your own, including the United States, where Google's and Unity's servers are located. These countries may have different data protection laws than your country of residence.</p>
         <p>For users in the European Economic Area, such transfers are conducted in compliance with applicable data protection laws, relying on:</p>
         <ul>
             <li>Standard Contractual Clauses (SCCs) approved by the European Commission</li>
-            <li>The data processing agreements of our third-party service providers (Google, InMobi, Unity)</li>
+            <li>The data processing agreements of our third-party service providers (Google and Unity)</li>
         </ul>
         <p>Your locally stored data (browsing history, Safebox files, credentials, downloads) is never transferred internationally as it remains solely on your device.</p>
 
@@ -649,7 +641,7 @@
             <p>If you have any questions about this Privacy Policy or our data practices, please contact us:</p>
             <p>
                 <strong>Email:</strong> zhuxiaoit4@gmail.com<br>
-                <strong>App Name:</strong> SaveIt - Video &amp; Photo Saver<br>
+                <strong>App Name:</strong> SaveIt Video Downloader<br>
                 <strong>Website:</strong> <a href="https://saveit.app">https://saveit.app</a>
             </p>
         </div>
